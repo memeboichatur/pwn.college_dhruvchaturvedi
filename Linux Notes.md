@@ -91,14 +91,15 @@ hidden files- interestingly, ls doesn't list all the files by default. Linux has
 mkdir - makes directories
 
 find - The find command takes optional arguments describing the search criteria and the search location. If you don't specify a search criteria, find matches every file. If you don't specify a search location, find uses the current working directory (.)
-
 we can use find -name to search a file by name.
 
 
 
 symbolic links- they are accessed by ln -s <original file> <link location>
-
 file - the file command lets us know the type of file, including symbolic links
 
+man - the man command stands for manual and will display the manual of the command you pass. (press q to quit)
+You can scroll man pages with the arrow keys (and PgUp/PgDn) and search with /. After searching, you can hit n to go to the next result and N to go to the previous result. Instead of /, you can use ? to search backwards!
 
+the -h command can further help with usage of commands 
 

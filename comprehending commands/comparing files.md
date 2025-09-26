@@ -1,4 +1,10 @@
-key: pwn.college{QhX9AgkIe_dfgt0R_QOBYiYV8dJ.01MwMDOxwyM1AzNzEzW}
+\# Comparing Files
 
-what I learnt:
-how the diff command works
+
+
+\*\*Key:\*\* pwn.college{QhX9AgkIe\_dfgt0R\_QOBYiYV8dJ.01MwMDOxwyM1AzNzEzW}
+
+
+
+\*\*What I learnt:\*\* How the diff command works
+
