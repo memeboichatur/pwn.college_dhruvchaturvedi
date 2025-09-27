@@ -89,6 +89,7 @@ hidden files- interestingly, ls doesn't list all the files by default. Linux has
 
 
 mkdir - makes directories
+look: - 
 
 find - The find command takes optional arguments describing the search criteria and the search location. If you don't specify a search criteria, find matches every file. If you don't specify a search location, find uses the current working directory (.)
 we can use find -name to search a file by name.
@@ -102,4 +103,12 @@ man - the man command stands for manual and will display the manual of the comma
 You can scroll man pages with the arrow keys (and PgUp/PgDn) and search with /. After searching, you can hit n to go to the next result and N to go to the previous result. Instead of /, you can use ? to search backwards!
 
 the -h command can further help with usage of commands 
+
+Globbing :
+
+* basically completes paths for you. (wild card)
+? works like *, but only matches one character.
+[] are an extension of ? but only match(or fill) characters specified inside the bracket and you can also give paths in glob
+inside a glob, if the first character is a ! or ^, it will invert and look for things that arent listed.
+tab key can be used to complete file paths, and also functions.
 
