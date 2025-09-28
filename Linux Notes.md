@@ -112,3 +112,42 @@ Globbing :
 inside a glob, if the first character is a ! or ^, it will invert and look for things that arent listed.
 tab key can be used to complete file paths, and also functions.
 
+INPUT AND OUTPUT REDIRECTION: 
+
+stdin, stdout,stderr
+
+output redirection: we can redirect stdout to files using > character using echo hi > asdf , single > is called truncation mode.
+You can redirect input in append mode using >> instead of > 
+
+A File Descriptor (FD) is a number that describes a communication channel in Linux
+FD 0: Standard Input
+FD 1: Standard Output
+FD 2: Standard Error
+When you redirect process communication, you do it by FD number
+some FD numbers are implicit, eg echo hi > abc is equivalent to hi 1> abc
+Furthermore, you can redirect multiple file descriptors at the same time!
+
+
+input redirection: input is redirected using <
+
+for stdout:
+can use the piping command to take output from one function into the input of the other , using | (called pipe operator)
+for stderr:
+The shell has a >& operator, which redirects a file descriptor to another file descriptor. This means that we can have a two-step process to grep through errors: first, we redirect standard error to standard output (2>& 1) and then pipe the now-combined stderr and stdout as normal (|)!
+grep -v shows lines that do NOT match a pattern:
+The tee command duplicates data flowing through your pipes to any number of files provided on the command line
+
+<() is used for process substitution. 
+
+
+
+**Shell Variables**
+
+You can also print out variables with echo, by prepending the variable name with a $. 
+You can write values to variables using = (note that this uses VAR and not $VAR: the $ is only prepended to access variables)
+
+env - print out every exported variable set in your shell
+
+<var>=$(<command>) can store the output of said command into the variable
+read reads input into a variable
+
